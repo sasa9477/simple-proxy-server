@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "start": "node index.js"
+    "start": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command node index.js"
   },
   "author": "",
   "license": "ISC",
