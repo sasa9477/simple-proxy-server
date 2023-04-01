@@ -2,14 +2,15 @@
 
 ### 概要
 
-wsl で実行したサーバーを スマートフォンの実機で確認するため、プロキシサーバーを作成しました。  
-プロキシサーバーの実行は wsl ではなく、windows で実行する必要があります。  
-また、実機は windows と 同一 LAN 内、かつ windows のネットワーク接続設定が プライベートになっている必要があります。
+wsl で実行したサーバーを スマートフォンの実機で確認するための プロキシサーバーです。  
+
+### 注意点
+ - プロキシサーバーの実行は wsl ではなく、windows で実行する必要があります。  
+ - 実機は windows と 同一 LAN 内、かつ windows のネットワーク接続設定が プライベートになっている必要があります。
 
 ### 構築手順
 
 mkcert を scoop からインストールし、localhost の SSL 証明書を発行します。  
-Set-ExecutionPolicy の設定や、scoop を既にインストールしている場合は mkcert だけインストールし、 SSL 証明書を発行します。
 
 ```PowerShell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
