@@ -1,8 +1,10 @@
-## wsl 開発用 windows プロキシサーバー
+## wsl 開発用 windows 簡易プロキシサーバー
 
 ### 概要
 
 wsl で実行したサーバーを スマートフォンの実機で確認するための プロキシサーバーです。  
+wsl2 の環境にポートフォワードする方法がありますが、うまくいかなかったために作成しました。  
+https://learn.microsoft.com/ja-jp/windows/wsl/networking#accessing-a-wsl-2-distribution-from-your-local-area-network-lan
 
 ### 注意点
  - プロキシサーバーの実行は wsl ではなく、windows で実行する必要があります。  
